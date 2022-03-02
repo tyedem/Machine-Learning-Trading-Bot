@@ -12,15 +12,16 @@ Libraries used are pandas, numpy, hvplot, matplotlib and sklearn
 
 # Summary
 
-## Baseline
+## Baseline - 3-month Training Window + SMA 4 and 100 days
 
-The baseline performance is set with a training window of 3 months.
+
 
 ![Baseline](Plots/Baseline.png)
 
-## Adjusted Training Window
+![Base](Classification_reports/Baseline.png)
 
-As shown below, increasing or decreasing the training window results in negligible improvements.
+
+## Adjusted Training Window - Baseline SMA 4 and 100 days
 
 ![1-month](Plots/Tuned_1month.png)
 
@@ -33,3 +34,13 @@ As shown below, increasing or decreasing the training window results in negligib
 ![24-months](Plots/Tuned_24months.png)
 
 ![24-months](Classification_reports/Tuned_24months.png)
+
+## Adjusted Simple Moving Average (SMA) - Baseline 3-month Training Window
+
+![SMA50 and SMA100](Plots/SMA50-100.png)
+
+![SMA50 and SMA100](Classification_reports/SMA50-100.png)
+
+![SMA50 and SMA200](Plots/SMA50-200.png)
+
+![SMA50 and SMA200](Classification_reports/SMA50-200.png)
