@@ -11,3 +11,25 @@ In this challenge, I've assumed the role of a financial advisor at financial adv
 Libraries used are pandas, numpy, hvplot, matplotlib and sklearn
 
 # Summary
+
+## Baseline
+
+The baseline performance is set with a training window of 3 months.
+
+![Baseline](Plots/Baseline.png)
+
+## Adjusted Training Window
+
+As shown below, increasing or decreasing the training window results in negligible improvements.
+
+![1-month](Plots/Tuned_1month.png)
+
+![1-month](Classification_reports/Tuned_1month.png)
+
+![12-months](Plots/Tuned_12months.png)
+
+![12-months](Classification_reports/Tuned_12months.png)
+
+![24-months](Plots/Tuned_24months.png)
+
+![24-months](Classification_reports/Tuned_24months.png)
