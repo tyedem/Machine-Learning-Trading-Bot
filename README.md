@@ -146,7 +146,7 @@ It is interesting to note the differences in Random Forests performance when the
 
 ![RandomForest](Classification_reports/RandomForest.png)
 
-# Random Forest - Using SVM Model with 48month Training Window + SMA 50 and 100
+## Random Forest - Using SVM Model with 48month Training Window + SMA 50 and 100
 
 ![RandomForest_48months_SMA50-100](Plots/RandomForest_48months_SMA50-100.png)
 
