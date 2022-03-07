@@ -142,10 +142,6 @@ It is interesting to note the differences in Random Forests performance when the
 
 ![DecisionTreeClassifier](Classification_reports/DecisionTreeClassifier.png)
 
-![RandomForest](Plots/RandomForest.png)
-
-![RandomForest](Classification_reports/RandomForest.png)
-
 ## Random Forest - Using SVM Model with 48month Training Window + SMA 50 and 100
 
 ![RandomForest_48months_SMA50-100](Plots/RandomForest_48months_SMA50-100.png)
