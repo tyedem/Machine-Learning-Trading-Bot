@@ -8,12 +8,19 @@ In this challenge, I've assumed the role of a financial advisor at financial adv
 
 ### Libraries
 
-Libraries used are pandas, numpy, hvplot, matplotlib and sklearn
+Libraries used are pandas, numpy, hvplot and sklearn
 
+# Final Model
+---
+## SVM 48month Training Window + SMA 50 and 100 days boosted Random Forest
+![RandomForest_48months_SMA50-100](Plots/RandomForest_48months_SMA50-100.png)
+
+---
 # Summary Analysis
+Please refer to the charts and classification reports below for all tunings and models explored in this project.
 
-Please refer to the charts and classification reports below for different tunings and models explored building this machine learning trading bot.
 ![Baseline](Plots/Baseline.png)
+
 
 
 ## Tuning from Baseline SVM Model
@@ -21,18 +28,34 @@ The greatest impact to improving the baseline model is in tuning the training wi
 
 Adjusting the SMA short and long windows alone, did not yield much impact when the baseline training window is maintained at 3months.
 
-When tuning the parameters for both training and SMA windows, it was settled that the best performing SVM model is tuned to 36months with SMA windows set at 50 and 200.
-![36-months](Plots/Tuned_36months.png)
+When tuning the parameters for both training and SMA windows, the best performing SVM model is tuned to 36months with SMA windows set at 50 and 200. However, it does not score the highest accuracy score at 55%. The model with the highest accuracy score of 56% is tuned with a 48month training window and SMA windows set at 50 and 100.
+
+![48-months_SMA50-100](Plots/48months_SMA50-100.png)
+
+![36-months_SMA50-200](Plots/36months_SMA50-200.png)
 
 ## Exploring Additional Machine Learning Models
-By optimizing the model further a variety of models were explored including, Logistic Regression, AdaBoost, Gradient Boosting Classifier, Decision Tree Classifier and Random Forest. Of the group classifiers, Random Forest is the best performing strategy as evidenced when compared to the other models.
-![RandomForest](Plots/RandomForest.png)
+By optimizing the model further a variety of models were explored including, Logistic Regression, AdaBoost, Gradient Boosting Classifier, Decision Tree Classifier and Random Forest. Of the group classifiers, Logistic Regression scores the highest accuracy score at 57%. However, when implementing the SVM model tuned to a 48month training window and SMAs at 50 and 100, Random Forest demonstrates the best performing strategy when compared to the other models. It may not score the highest accuracy score, but it outperforms all other models by large margin.
+
+It is interesting to note the differences in Random Forests performance when the SVM model is tuned a differently between 48months with SMA 50 and 100 and 36months with SMA 50 and 200.
 
 ---
+
+
+## Random Forest - Using SVM Model with 48month Training Window + SMA 50 and 100
+![RandomForest_48months_SMA50-100](Plots/RandomForest_48months_SMA50-100.png)
+
+![RandomForest_48months_SMA50-100](Classification_reports/RandomForest_48months_SMA50-100.png)
+
+## Random Forest - Using SVM Model with 36months Training Window + SMA 50 and 200
+![RandomForest_36months_SMA50-200](Plots/RandomForest_36months_SMA50-200.png)
+
+![RandomForest_36months_SMA50-200](Classification_reports/RandomForest_36months_SMA50-200.png)
+
+# Models Explored
+---
 ## Baseline - SVM Model - 3-month Training Window + SMA Windows of 4 and 100 days
-
-
-
+---
 ![Baseline](Plots/Baseline.png)
 
 ### Baseline - Classification Report
@@ -121,4 +144,16 @@ By optimizing the model further a variety of models were explored including, Log
 
 ![RandomForest](Plots/RandomForest.png)
 
-![LogisticRegression](Classification_reports/RandomForest.png)
+![RandomForest](Classification_reports/RandomForest.png)
+
+# Random Forest - Using SVM Model with 48month Training Window + SMA 50 and 100
+
+![RandomForest_48months_SMA50-100](Plots/RandomForest_48months_SMA50-100.png)
+
+![RandomForest_48months_SMA50-100](Classification_reports/RandomForest_48months_SMA50-100.png)
+
+## Random Forest - Using SVM Model with 36months Training Window + SMA 50 and 200
+
+![RandomForest_36months_SMA50-200](Plots/RandomForest_36months_SMA50-200.png)
+
+![RandomForest_36months_SMA50-200](Classification_reports/RandomForest_36months_SMA50-200.png)
