@@ -35,7 +35,7 @@ When tuning the parameters for both training and SMA windows, the best performin
 ---
 
 ## Exploring Additional Machine Learning Models
-Other models explored include, Logistic Regression, AdaBoost, Gradient Boosting Classifier, Decision Tree Classifier and Random Forest. Of the group of classifiers, Logistic Regression scores the highest accuracy score at 57%. However, it was not the best performing. When implementing the SVM model tuned to a 48month training window and SMAs at 50 and 100, Random Forest demonstrates the best performing strategy when compared to the other models. It may not score the highest accuracy score, but it outperforms all other models by a large margin.
+Other models explored include, Logistic Regression, AdaBoost, Gradient Boosting Classifier, Decision Tree Classifier and Random Forest. Of the group of models, Logistic Regression scores the highest accuracy score at 57%. However, it was not the best performing. When implementing the SVM model tuned to a 48month training window and SMAs at 50 and 100, Random Forest demonstrates the best performing strategy when compared to the other models. It may not score the highest accuracy score, but it outperforms all other models by a large margin.
 
 Also, it is interesting to note the differences in Random Forests performance when the SVM model is tuned differently between 48months with SMA 50 and 100 and 36months with SMA 50 and 200.
 
