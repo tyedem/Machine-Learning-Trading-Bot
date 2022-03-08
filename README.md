@@ -12,7 +12,7 @@ Libraries used are pandas, numpy, hvplot and sklearn
 
 # Final Model
 ---
-## Support Vector Machine with 48month Training Window + SMA 50 and 100 days boosted with Random Forest
+## Random Forest with 48month Training Window + SMA 50 and 100 days
 ![RandomForest_48months_SMA50-100](Plots/RandomForest_48months_SMA50-100.png)
 
 ---
